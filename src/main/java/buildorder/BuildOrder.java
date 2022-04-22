@@ -20,7 +20,7 @@ public class BuildOrder {
 				// cycle through dependencies and determine if current build is capable of being added
 				for(int j=0; j < dependencies.length; j++) {
 					if(builds[i] == dependencies[j][1] && !buildList.contains(dependencies[j][0])) {
-						flag = false; // flagged false until valid build is found
+						flag = false;
 					}
 				}
 				
