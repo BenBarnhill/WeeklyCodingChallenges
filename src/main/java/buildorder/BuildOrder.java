@@ -7,7 +7,7 @@ public class BuildOrder {
 	
 	public static List<String> sortBuilds(String[] builds, String[][] dependencies) throws NoValidOrderException {
 		ArrayList<String> buildList = new ArrayList<String>(); // create the build order list
-		int loop = 0; // needed for determining build validity 
+		int loop = 0; // needed for determining build order validity 
 		while(buildList.size()!= builds.length) {
 			for(int i = 0; i < builds.length; i++) {
 				boolean flag = true; // needed for signaling build addition
